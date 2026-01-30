@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saules sistēma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+
+  <!-- Fons -->
+  <div id="space">
+
+    <!-- Drop zonas (orbītas) -->
+    <div class="orbit" data-planet="mercury"></div>
+    <div class="orbit" data-planet="venus"></div>
+    <div class="orbit" data-planet="earth"></div>
+    <div class="orbit moon-orbit" data-planet="moon"></div>
+    <div class="orbit" data-planet="mars"></div>
+    <div class="orbit" data-planet="jupiter"></div>
+    <div class="orbit" data-planet="saturn"></div>
+    <div class="orbit" data-planet="uranus"></div>
+    <div class="orbit" data-planet="neptune"></div>
+    <div class="orbit" data-planet="pluto"></div>
+
+  </div>
+
+  <!-- Velkamie objekti -->
+  <div id="planets">
+    <img src="images/mercury.png" draggable="true" data-planet="mercury">
+    <img src="images/venus.png" draggable="true" data-planet="venus">
+    <img src="images/earth.png" draggable="true" data-planet="earth">
+    <img src="images/moon.png" draggable="true" data-planet="moon">
+    <img src="images/mars.png" draggable="true" data-planet="mars">
+    <img src="images/jupiter.png" draggable="true" data-planet="jupiter">
+    <img src="images/saturn.png" draggable="true" data-planet="saturn">
+    <img src="images/uranus.png" draggable="true" data-planet="uranus">
+    <img src="images/neptune.png" draggable="true" data-planet="neptune">
+    <img src="images/pluto.png" draggable="true" data-planet="pluto">
+  </div>
+
+</div>
+
+<!-- Info burbulis -->
+<div id="info"></div>
+
+<audio id="correctSound" src="sounds/correct.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
